@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainMenu">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="1280.0">
+         <left>
+            <AnchorPane prefHeight="775.0" prefWidth="468.0" style="-fx-background-color: #212529;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="84.0" layoutY="363.0" mnemonicParsing="false" onAction="#GoesNextLogin" prefHeight="49.0" prefWidth="323.0" style="-fx-background-color: #206ffd; -fx-border-color: #206ffd; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20; -fx-background-radius: 20; -fx-alignment: center; -fx-padding: 5;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.5" />
+                     </effect>
+                  </Button>
+                  <Hyperlink layoutX="157.0" layoutY="643.0" text="Forgot your Password?">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.6" />
+                     </effect>
+                  </Hyperlink>
+                  <VBox layoutX="69.0" layoutY="92.0" prefHeight="251.0" prefWidth="348.0">
+                     <children>
+                        <Label prefHeight="106.0" prefWidth="363.0" style="-fx-alignment: center;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="45.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="LoginUsername" prefHeight="50.0" prefWidth="299.0" promptText="Username" styleClass="LoginTextFields" stylesheets="@stylesheet.css">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="LoginPassword" prefHeight="39.0" prefWidth="299.0" promptText="Password" styleClass="LoginTextFields" stylesheets="@stylesheet.css">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                     </children>
+                  </VBox>
+                  <Label fx:id="LoginLabel" layoutX="74.0" layoutY="310.0" prefHeight="34.0" prefWidth="262.0" textFill="#d11212">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="775.0" prefWidth="832.0" style="-fx-background-color: linear-gradient(to left, #206ffd ,  #212529);" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="730.0" layoutY="14.0" mnemonicParsing="false" onAction="#Exit" prefHeight="66.0" prefWidth="42.0" style="-fx-background-color: transparent; -fx-border-color: #212529; -fx-border-width: 4; -fx-border-radius: 30;" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
