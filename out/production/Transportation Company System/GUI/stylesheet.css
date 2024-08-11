@@ -1,0 +1,189 @@
+
+
+
+/*Main and Intro CSS Styling*/
+
+.IntroLoginButton {
+    -fx-background-color: transparent;
+    -fx-border-color:  #6f2cf5;
+    -fx-border-radius: 50 0 0 50;
+    -fx-border-width: 3;
+
+}
+
+.IntroLoginButton:hover {
+    -fx-border-width: 4;
+    -fx-font-size: 28;
+
+}
+.IntroRegisterButton {
+    -fx-background-color: transparent;
+    -fx-border-color:  #6565d7;
+    -fx-border-radius: 0 50 50 0;
+    -fx-border-width: 3;
+    -fx-border-style: dashed;
+
+}
+.IntroRegisterButton:hover {
+    -fx-border-width: 4;
+    -fx-font-size: 28;
+}
+.RegisterTextFields {
+    -fx-background-color: transparent;
+    -fx-border-color:  #F0B22E;
+    -fx-border-radius:  2;
+    -fx-border-width: 0 0 3 0;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+
+}
+.RegisterTextFields:focused {
+    -fx-background-color:  #AA9050;
+    -fx-text-fill: black;
+    -fx-background-radius:  14 14 0 0;
+}
+.LoginTextFields {
+    -fx-background-color: transparent;
+    -fx-border-color:  #206ffd;
+    -fx-border-radius:  2;
+    -fx-border-width: 0 0 3 0;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+
+}
+.SelectionRightButton {
+    -fx-background-color: transparent;
+    -fx-border-color:  #6565d7;
+    -fx-border-radius: 0 50 50 0;
+    -fx-border-width: 3;
+}
+.SelectionRightButton:hover {
+    -fx-border-width: 4;
+    -fx-font-size: 28;
+
+}
+
+/*Passenger CSS Styling*/
+
+.PassengerButton {
+    -fx-background-color:  #111b21;
+}
+.PassengerButton:hover {
+    -fx-background-color:   #202C33;
+
+}
+.PassengerButton:focused {
+    -fx-background-color:  #212529;
+}
+
+/*Driver CSS Styling*/
+.HboxDriver {
+    -fx-background-color: linear-gradient(to right, #142B3B 25% ,  #62717C);
+
+}
+.DriverMenu {
+    -fx-background-color: linear-gradient(to right, #142B3B 2% ,  #62717C);
+}
+.DriverBtn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50 0 0 50;
+    -fx-border-width: 5;
+    -fx-border-color: linear-gradient(to right, #0B1F32 25%,  #142B3B);
+    -fx-border-radius:  50 0 0 50;
+}
+.DriverBtn:focused {
+    -fx-background-color: linear-gradient(to right, #0B1F32 50%,  #142B3B);
+    -fx-background-radius: 50 0 0 50;
+}
+.DriverBtn:hover {
+    -fx-background-color: #273841;
+    -fx-background-radius: 50 0 0 50;
+    -fx-border-color: linear-gradient(to right, #0B1F32 25%,  #142B3B);
+}
+.DriverBtn:pressed {
+    -fx-border-insets: 2;
+    -fx-background-inset: 6;
+}
+.PassengerBookButton {
+    -fx-background-color: linear-gradient(to bottom right, #142B3B 20% ,  #000E27);
+    -fx-background-radius: 40;
+}
+.PassengerBookButton:hover {
+    -fx-background-color: linear-gradient(to top right, #000E27 20%, #142B3B , #ccaf79 );
+}
+.PassengerBookButton:pressed {
+    -fx-background-insets: 2;
+}
+.PassengerCard {
+    -fx-background-color: transparent;
+    -fx-border-color:  linear-gradient(to bottom right, #62717C 20% ,  #0B1F32);
+    -fx-border-width: 10;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+.PassengerCard:hover {
+    -fx-border-insets: 3;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+.spinner {
+    -fx-primary-color: linear-gradient(to right, #0B1F32 25%,  #142B3B);
+    -fx-secondary-color: linear-gradient(to right, #0B1F32 25%,  #142B3B);
+    -fx-background-radius: 20 20 20 20;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.spinner .increment-arrow-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0 5 0 0;
+}
+.spinner .decrement-arrow-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0 0 5 0;
+
+}
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+.anchorPane {
+    -fx-background-color: rgba(0, 0, 0, 0.75);
+}
+.ManagerTextFields {
+    -fx-border-color: linear-gradient(to left, #142B3B, #62717C);
+    -fx-border-radius: 15;
+    -fx-border-width: 5;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.ManagerTextFields:focused {
+    -fx-background-color: linear-gradient(to left, #142B3B, #62717C);
+    -fx-border-color: linear-gradient(to right, #142B3B, #62717C);
+    -fx-border-insets: 2;
+    -fx-background-radius: 15;
+    -fx-background-insets: 3;
+    -fx-text-fill: black;
+}
+.left-scrollbar .scroll-bar:vertical {
+    -fx-alignment: center-  left; /* Align scrollbar to the left */
+}
+
+

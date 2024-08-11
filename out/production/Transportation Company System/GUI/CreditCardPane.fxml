@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CreditCardPaneController">
+   <children>
+      <AnchorPane fx:id="testAnchor" prefHeight="775.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@stylesheet.css">
+         <children>
+            <AnchorPane prefHeight="775.2" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="327.0" layoutY="111.0" prefHeight="634.0" prefWidth="798.0">
+                     <children>
+                        <VBox layoutX="15.0" layoutY="12.0" prefHeight="606.0" prefWidth="751.0" spacing="20.0">
+                           <children>
+                              <AnchorPane prefHeight="276.0" prefWidth="578.0">
+                                 <children>
+                                    <ImageView fitHeight="252.0" fitWidth="353.0" layoutX="110.0" layoutY="12.0">
+                                       <image>
+                                          <Image url="@credit-card-transparent-background-png.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <HBox prefHeight="63.0" prefWidth="608.0">
+                                 <children>
+                                    <TextField prefHeight="119.0" prefWidth="650.0" promptText="Card Number" styleClass="ManagerTextFields" stylesheets="@stylesheet.css">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="59.0" prefWidth="608.0" spacing="20.0" stylesheets="@stylesheet.css">
+                                 <children>
+                                    <TextField prefHeight="59.0" prefWidth="320.0" promptText="Expiry Date" styleClass="ManagerTextFields" stylesheets="@stylesheet.css">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField prefHeight="69.0" prefWidth="320.0" promptText="CVV" styleClass="ManagerTextFields" stylesheets="@stylesheet.css">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="511.0" />
+                                    <Button fx:id="PassengerBuyButton" mnemonicParsing="false" onAction="#Book" prefHeight="61.0" prefWidth="135.0" styleClass="PassengerBookButton" stylesheets="@stylesheet.css" text="Buy" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
